@@ -42,6 +42,7 @@ ul{
 
 .navbar > li {
     float:left;
+    width:100px;
 }
 
 li.feedback{
