@@ -15,8 +15,14 @@ app.use(express.static('public'));
 // routing scenarios
 app.get('/',function(req,res){
     // res.type('text/plain');
-    res.sendFile('travel.html', { root: path.join(__dirname, './public')});
+    res.sendFile('travel.html', { root: path.join(__dirname, './public/travel.html')});
   });
+  
+
+app.get('/travel',function(req,res){
+// res.type('text/plain');
+res.sendFile('travel.html', { root: path.join(__dirname, './public/travel.html')});
+});
   
 
 app.get('/other-page',function(req,res){
