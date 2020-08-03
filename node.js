@@ -9,11 +9,16 @@ var path = require('path');
 // listen for specific port - provided during app launch in terminal
 app.set('port', process.argv[2]);
 
-// // setting up location / directory to serve up static files
-// app.use(express.static('public'));
-
+// setting up location / directory to serve up static files
+app.use(express.static('public'));
 
 // routing scenarios
+app.get('/',function(req,res){
+    // res.type('text/plain');
+    res.sendFile('index.html', { root: path.join(__dirname, './public')});
+  });
+  
+
 app.get('/other-page',function(req,res){
   res.type('text/plain');
   res.send('Welcome to the other page!');
