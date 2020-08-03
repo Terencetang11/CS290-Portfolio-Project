@@ -9,8 +9,8 @@ var path = require('path');
 // listen for specific port - provided during app launch in terminal
 app.set('port', process.argv[2]);
 
-// setting up location / directory to serve up static files
-app.use(express.static('public'));
+// // setting up location / directory to serve up static files
+// app.use(express.static('public'));
 
 
 // routing scenarios
