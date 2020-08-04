@@ -299,22 +299,26 @@ shifts scroll left, disengages snap and then reengages to snap to next slide */
   
 /* homepage_text styling */
 
-.homepage_text{
+.homepage_text, .jalen_text{
     display:block;
     text-align:center;
 }
 
-.homepage_text > h1{
+.homepage_text > h1, .jalen_text > h1{
     font-size: 50px;
 }
 
-.homepage_text > hr{
+.homepage_text > hr, .jalen_text > hr{
     width:750px;
     height:1px;
 }
 
 .homepage_text p{
     text-align:left;
+}
+
+.jalen_text p{
+  text-align:center;
 }
 
 /* contact_me styling */

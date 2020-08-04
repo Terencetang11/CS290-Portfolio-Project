@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Jalen's Art</title>
+        <!-- Stylesheets here -->
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+
+    <body>
+       
+        <!-- Website top container -->
+        <div class="container_head">
+            <h1>Portfolio Project: CS290 Website</h1>
+            <h3>Designed by Terence</h3>
+        </div>
+        
+        <!-- Top navigation bar -->
+        <!-- built on unordered list where items displayed inline with some hover over and active icon styling -->
+        <ul class= "navbar">
+            <li><a href="/">Home</a></li>
+            <li><a href="/travel">Travel</a></li>
+            <li><a href="/gaming">Gaming</a></li>
+            <li><a class="active" href="/jalen">Art</a></li>
+            <li class="feedback"><a href="/feedback">Feedback</a></li>
+        </ul>
+
+        <!-- Homepage text body -->
+        <div class="jalen_text">
+            <h1>Welcome to Jalen's Art Gallery!!</h1>
+            <hr>
+            <h3>Check out some of her coolest pieces below!</h3>
+
+            <p>
+                Jalen is an artsy individual who's got a knack for caricatures and a love for anime!  She's always drawing and I'm a huge fan of her work!
+            </p>
+        </div>
+            
+        <!-- Carousel object -->
+        <!-- Adapted from Christian Schaefer example on https://css-tricks.com/css-only-carousel/ -->
+        <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+                <li id="carousel__slide1"
+                    tabindex="0"
+                    class="carousel__slide">
+                    <img src="art_carousel/image1.jpg" 
+                        alt="Microsoft">
+                    <div class="carousel__snapper">
+                    <a href="#carousel__slide7"
+                        class="carousel__prev">Go to last slide</a>
+                    <a href="#carousel__slide2"
+                        class="carousel__next">Go to next slide</a>
+                    </div>
+                </li>
+                <li id="carousel__slide2"
+                    tabindex="0"
+                    class="carousel__slide">
+                    <img src="art_carousel/image2.jpg" 
+                        alt="Microsoft">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide1"
+                        class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide3"
+                        class="carousel__next">Go to next slide</a>
+                </li>
+                <li id="carousel__slide3"
+                    tabindex="0"
+                    class="carousel__slide">
+                    <img src="art_carousel/image3.jpg" 
+                        alt="Microsoft">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide2"
+                        class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide4"
+                        class="carousel__next">Go to next slide</a>
+                </li>
+                <li id="carousel__slide4"
+                    tabindex="0"
+                    class="carousel__slide">
+                    <img src="art_carousel/image4.jpg" 
+                        alt="Microsoft">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide3"
+                        class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide5"
+                        class="carousel__next">Go to next slide</a>
+                </li>
+                <li id="carousel__slide5"
+                    tabindex="0"
+                    class="carousel__slide">
+                    <img src="art_carousel/image5.jpg" 
+                        alt="Microsoft">
+                    <div class="carousel__snapper">
+                    <a href="#carousel__slide4"
+                        class="carousel__prev">Go to last slide</a>
+                    <a href="#carousel__slide6"
+                        class="carousel__next">Go to next slide</a>
+                    </div>
+                </li>
+                <li id="carousel__slide6"
+                    tabindex="0"
+                    class="carousel__slide">
+                    <img src="art_carousel/image6.jpg" 
+                        alt="Microsoft">
+                    <div class="carousel__snapper">
+                    <a href="#carousel__slide5"
+                        class="carousel__prev">Go to last slide</a>
+                    <a href="#carousel__slide7"
+                        class="carousel__next">Go to next slide</a>
+                    </div>
+                </li>
+                <li id="carousel__slide7"
+                    tabindex="0"
+                    class="carousel__slide">
+                    <img src="art_carousel/image7.jpg" 
+                        alt="Microsoft">
+                    <div class="carousel__snapper">
+                    <a href="#carousel__slide6"
+                        class="carousel__prev">Go to last slide</a>
+                    <a href="#carousel__slide1"
+                        class="carousel__next">Go to first slide</a>
+                    </div>
+                </li>
+            </ol>
+
+            <aside class="carousel__navigation">
+                <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide1"
+                            class="carousel__navigation-button">Go to slide 1</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide2"
+                            class="carousel__navigation-button">Go to slide 2</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide3"
+                            class="carousel__navigation-button">Go to slide 3</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide4"
+                            class="carousel__navigation-button">Go to slide 4</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide5"
+                            class="carousel__navigation-button">Go to slide 5</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide6"
+                            class="carousel__navigation-button">Go to slide 6</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide7"
+                            class="carousel__navigation-button">Go to slide 7</a>
+                    </li>
+                </ol>
+            </aside>
+        </section>
+
+
+        <!-- JS scripts here -->
+        <script src="jalen_page.js"></script>
+    </body>
+</html>
