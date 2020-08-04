@@ -31,6 +31,10 @@ app.get('/gaming',function(req,res){
     res.sendFile('gaming.html', {root: path.join(__dirname, './public')});
 });
 
+app.get('/jalen',function(req,res){
+    res.sendFile('jalen.html', {root: path.join(__dirname, './public')});
+});
+
 app.get('/feedback',function(req,res){
     res.render('feedback', {
         title:'Feedback',
@@ -39,16 +43,16 @@ app.get('/feedback',function(req,res){
     })
 });
 
-app.get('/other-page',function(req,res){
-    res.type('text/plain');
-    res.send('Welcome to the other page!');
-});
+// app.get('/other-page',function(req,res){
+//     res.type('text/plain');
+//     res.send('Welcome to the other page!');
+// });
 
-app.get('/random-number', function(req,res){
-    num = Math.floor(Math.random() * Math.floor(10000));
-    res.type('text/plain');
-    res.send("This is the random number page.  The random number is: " + num)
-});
+// app.get('/random-number', function(req,res){
+//     num = Math.floor(Math.random() * Math.floor(10000));
+//     res.type('text/plain');
+//     res.send("This is the random number page.  The random number is: " + num)
+// });
 
 // handles 404 status code issues
 app.use(function(req,res){
