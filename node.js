@@ -1,33 +1,43 @@
 
-// set up express web app
+// set up express web app and which port to assign it to
 var express = require('express');
 var app = express();
-
-// require path for file management and directory
-var path = require('path');
-
-// listen for specific port - provided during app launch in terminal
 app.set('port', process.argv[2]);
 
-// setting up location / directory to serve up static files
+// set up handlebars engine for rendering html template files
+var handlebars = require('express-handlebars').create({defaultLayout:'main'});
+app.engine('handlebars', handlebars.engine);
+app.set('view engine', 'handlebars');
+
+// sets up bodyParsing for xwww URL and JSON formatted POST submissions
+var bodyParser = require('body-parser');  // initializes bodyParser handler
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+// set up file path for file management and directory and path middleware for serving up static files
+var path = require('path');
 app.use(express.static('public'));
 
 // routing scenarios
 app.get('/',function(req,res){
-    // res.type('text/plain');
     res.sendFile('index.html', {root: path.join(__dirname, './public')});
 });
 
 app.get('/travel',function(req,res){
-    // res.type('text/plain');
     res.sendFile('travel.html', {root: path.join(__dirname, './public')});
 });
 
 app.get('/gaming',function(req,res){
-    // res.type('text/plain');
     res.sendFile('gaming.html', {root: path.join(__dirname, './public')});
 });
-  
+
+app.get('/feedback',function(req,res){
+    res.render('feedback', {
+        title:'Feedback',
+        style:'styles.css',
+        javascript:'feedback_page.js'
+    })
+});
 
 app.get('/other-page',function(req,res){
     res.type('text/plain');
