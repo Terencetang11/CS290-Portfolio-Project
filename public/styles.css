@@ -431,6 +431,7 @@ shifts scroll left, disengages snap and then reengages to snap to next slide */
 
 #feedback_form fieldset {
   background: lightgrey;
+  max-width:100%;
 }
 
 #feedback_form {
