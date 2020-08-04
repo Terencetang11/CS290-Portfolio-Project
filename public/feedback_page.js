@@ -1,0 +1,2 @@
+console.log("The content on this page was generated through rendering of a handlebars template!")
+console.log("This page features a form which submits a post request to http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php")

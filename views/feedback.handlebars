@@ -22,6 +22,108 @@
 </div>
 
 <!-- Feedback form -->
+    <form id="feedback_form" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+        <fieldset>
+            <legend>Site Feedback Form</legend>
+            <p><strong>Instructions:</strong> Please provide your thoughts and feedback below</p>
+            
+            <fieldset>
+                <label>Please enter your name or unique identifier for results tracking:
+                    <input type="text" name="name" size="30" maxlength="100">
+                </label>
+            </fieldset>
+            
+            <fieldset class="site_usability">
+                <p>From a scale of 1-5 with 1 being the worst and 5 being the best, how would you rate this websites navigation and usability?
+                    <br />
+                    <label>
+                        <input type="radio" name="usability" value="1">1</label>
+                    <br />
+                    <label>
+                        <input type="radio" name="usability" value="2">2</label>
+                    <br />
+                    <label>
+                        <input type="radio" name="usability" value="3">3</label>
+                    <br />
+                    <label>
+                        <input type="radio" name="usability" value="4">4</label>
+                    <br />
+                    <label>
+                        <input type="radio" name="usability" value="5">5</label>
+                </p>
+            </fieldset>
+
+            <fieldset class="visuals">
+                <p>From a scale of 1-5 with 1 being the worst and 5 being the best, how would you rate this websites visual appeal and design?
+                    <br />
+                    <label>
+                        <input type="radio" name="visuals" value="1">1</label>
+                    <br />
+                    <label>
+                        <input type="radio" name="visuals" value="2">2</label>
+                    <br />
+                    <label>
+                        <input type="radio" name="visuals" value="3">3</label>
+                    <br />
+                    <label>
+                        <input type="radio" name="visuals" value="4">4</label>
+                    <br />
+                    <label>
+                        <input type="radio" name="visuals" value="5">5</label>
+                </p>
+            </fieldset>
+            
+            <fieldset class="favorite_page">
+                <p>Which page was your favorite?
+                    <br />
+                    <label>
+                        <input type="radio" name="favorite_page" value="index">Home Page</label>
+                    <br />
+                    <label>
+                        <input type="radio" name="favorite_page" value="travel">Travel</label>
+                    <br />
+                    <label>
+                        <input type="radio" name="favorite_page" value="gaming">Gaming</label>
+                    <br />
+                    <label>
+                        <input type="radio" name="favorite_page" value="jalens">Art</label>
+                    <br />
+                    <label>
+                        <input type="radio" name="favorite_page" value="feedback">Feedback</label>
+                </p>
+            </fieldset>
+
+            <fieldset class="least_favorite_page">
+                <p>Which page was your least favorite?
+                    <br />
+                    <label>
+                        <input type="radio" name="least_favorite_page" value="index">Home Page</label>
+                    <br />
+                    <label>
+                        <input type="radio" name="least_favorite_page" value="travel">Travel</label>
+                    <br />
+                    <label>
+                        <input type="radio" name="least_favorite_page" value="gaming">Gaming</label>
+                    <br />
+                    <label>
+                        <input type="radio" name="least_favorite_page" value="jalens">Art</label>
+                    <br />
+                    <label>
+                        <input type="radio" name="least_favorite_page" value="feedback">Feedback</label>
+                </p>
+            </fieldset>
+            
+            
+            <label>Text Area</label>
+            <textarea id = "myTextArea"
+                rows = "3"
+                cols = "80">
+                Your text here
+            </textarea>
+            
+            <input type="submit" value="Submit Feedback">
+        </fieldset>
+    </form>
 
 
 <!-- JS scripts here -->
