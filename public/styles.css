@@ -428,6 +428,6 @@ shifts scroll left, disengages snap and then reengages to snap to next slide */
     overflow-x:hidden;
 }
 
-#feedback_form > fieldset {
+#feedback_form fieldset {
   background: lightgrey;
 }
