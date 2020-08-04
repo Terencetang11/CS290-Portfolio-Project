@@ -436,3 +436,8 @@ shifts scroll left, disengages snap and then reengages to snap to next slide */
 #feedback_form {
   max-width:100%;
 }
+
+.feedback_form_area{
+  position:relative;
+  width: 100%;
+}
